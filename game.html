@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Game</title>
+    <link rel="stylesheet" href="css/game.css" />
+    <script type="text/javascript" src="js/game.js" ></script>
+
+</head>
+<body onload="ready()">
+<div id="container">
+
+    <div id="toolbar">
+        <input type="button" name="" value="Home" onclick="window.location.href='index.html'"/>
+        <input type="button" name="" value="Simple" onclick="initGame(2)"/>
+        <input type="button" name="" value="Complicated" onclick="initGame(4)"/>
+
+        &nbsp;&nbsp;
+        <img src="images/1.jpg" onclick="changePic(this)"/>
+        <img src="images/2.jpg" onclick="changePic(this)"/>
+        <img src="images/3.jpg" onclick="changePic(this)"/>
+    </div>
+    <h1>Click the picture near the blank space to move it.</h1>
+    <div id="game_left">
+        <canvas id="puzzle" width="600" height="600" onclick="move(event)"></canvas>
+    </div>
+    <div id="game_right">
+        <img id="example" src="images/1.jpg"/>
+    </div>
+</div>
+</body>
+</html>
